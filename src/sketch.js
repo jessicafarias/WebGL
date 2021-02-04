@@ -37,9 +37,14 @@ const sketch = ({ context }) => {
   const geometry = new THREE.SphereGeometry(1, 32, 16);
 
   // Setup a material
-  const material = new THREE.MeshBasicMaterial({
-    color: "red",
-    wireframe: true
+  const material2 = new THREE.MeshNormalMaterial({
+    //color: "red",
+    //wireframe: true
+  });
+  const material = new THREE.MeshNormalMaterial({
+    //color: "red",
+    flatShading: true
+    //wireframe: true
   });
 
   // Setup a mesh with geometry + material

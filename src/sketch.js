@@ -41,10 +41,15 @@ const sketch = ({ context }) => {
     //color: "red",
     //wireframe: true
   });
-  const material = new THREE.MeshNormalMaterial({
+  const material1 = new THREE.MeshNormalMaterial({
     //color: "red",
     flatShading: true
     //wireframe: true
+  });
+
+  const texture = new THREE.TextureLoader().load("../src/images/earth.jpg")
+  const material = new THREE.MeshBasicMaterial({
+    map:texture
   });
 
   // Setup a mesh with geometry + material

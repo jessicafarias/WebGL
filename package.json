@@ -1,0 +1,24 @@
+{
+  "name": "WebGL",
+  "version": "1.0.0",
+  "description": "Making a fantastic and interactive Front-End Website usign WebGL and GLSL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicafarias/WebGL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicafarias/WebGL/issues"
+  },
+  "homepage": "https://github.com/jessicafarias/WebGL#readme",
+  "dependencies": {
+    "canvas-sketch": "^0.7.4",
+    "three": "^0.125.2"
+  }
+}

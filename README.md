@@ -1,9 +1,6 @@
 # WebGL
 Making a fantastic and interactive Front-End Website usign WebGL and GLSL
 
-# WebGL
-Making a fantastic and interactive Front-End Website usign WebGL and GLSL
-
 ## Run in local server:
 
 ```sh

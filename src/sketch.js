@@ -38,9 +38,9 @@ const sketch = ({ context }) => {
   });
 
   const loader = new THREE.TextureLoader();
-  const texture_moon = new loader.load("../src/images/moon.jpg")
+  const texture_moon = new loader.load("../moon.jpg")
 
-  const texture = new loader.load("../src/images/earth.jpg")
+  const texture = new loader.load("../earth.jpg")
   const material = new THREE.MeshStandardMaterial({
     map:texture,
     roughness:1,
@@ -70,8 +70,6 @@ const sketch = ({ context }) => {
   scene.add(light)
   // draw each frame
 
-  //scene.add(new THREE.PointLightHelper(light,0.1))
-  //scene.add(new THREE.GridHelper(2,15))
 
   return {
     // Handle resize events here

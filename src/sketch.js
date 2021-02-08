@@ -38,9 +38,9 @@ const sketch = ({ context }) => {
   });
 
   const loader = new THREE.TextureLoader();
-  const texture_moon = new loader.load("../src/images/moon.jpg")
+  const texture_moon = new loader.load("../moon.jpg")
 
-  const texture = new loader.load("../src/images/earth.jpg")
+  const texture = new loader.load("../earth.jpg")
   const material = new THREE.MeshStandardMaterial({
     map:texture,
     roughness:1,
@@ -66,9 +66,11 @@ const sketch = ({ context }) => {
 
   // drawing a light
   const light = new THREE.PointLight("white", 1.5);
-  light.position.set(2,2,3)
+  light.position.set(2,2,-3)
   scene.add(light)
   // draw each frame
+
+
   return {
     // Handle resize events here
     resize({ pixelRatio, viewportWidth, viewportHeight }) {

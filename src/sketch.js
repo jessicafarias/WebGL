@@ -66,9 +66,13 @@ const sketch = ({ context }) => {
 
   // drawing a light
   const light = new THREE.PointLight("white", 1.5);
-  light.position.set(2,2,3)
+  light.position.set(2,2,-3)
   scene.add(light)
   // draw each frame
+
+  //scene.add(new THREE.PointLightHelper(light,0.1))
+  //scene.add(new THREE.GridHelper(2,15))
+
   return {
     // Handle resize events here
     resize({ pixelRatio, viewportWidth, viewportHeight }) {
